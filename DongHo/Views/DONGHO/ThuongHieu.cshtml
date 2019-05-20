@@ -1,0 +1,12 @@
+﻿@model IEnumerable<DongHo.Models.THUONGHIEU>
+
+<div class="list-group">
+    @foreach (var Model in Model)
+    {
+        <a style="text-align:initial" href="@Url.Action("SPTheothuonghieu","DONGHO",new {id = Model.MaTH })">
+            @Model.TenTH
+        </a>
+    }
+</div>
+
+

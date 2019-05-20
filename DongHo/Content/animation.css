@@ -1,0 +1,30 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+h2.layout-animation{
+            width: 400px;
+            height:100px;
+            background-color: #0fd7eb;
+            position: relative;
+            animation-name: go-cross;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; /* di chuyển ngược */
+            color:#eb7a19;
+            font-family:'Bookman Old Style';
+        }
+ @keyframes go-cross{
+              0%{background:#19dde7; top: 0px; left:260px;}
+            100%{background:#3af922;top:0px; left:450px;}
+           
+}
+.stuhrling{
+    background: linear-gradient(120deg, #000000, #6d6d41, rgb(25, 25, 25));
+    font-family: 'Lucida Calligraphy';
+    border: 0px solid;
+    width: 1519.2px;
+    height: 165px;
+    text-align: center;
+        padding-top: 45px;
+    font-size: -webkit-xxx-large;
+    color: wheat;
+}
