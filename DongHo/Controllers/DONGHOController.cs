@@ -21,10 +21,20 @@ namespace DongHo.Controllers
             var donghomoi = Laydongho(3);
             return View(donghomoi);
         }
-        public ActionResult Loai()
+        public ActionResult SPTheoNam()
         {
-            var loai = from l in data.LOAIs select l;
-            return PartialView();
+            var nam = from n in data.SANPHAMs where n.Gioitinh == 1 select n;
+            return View();
+        }
+        public ActionResult SPTheoAutomatic()
+        {
+            var auto = from at in data.SANPHAMs where at.MaLoai == 3 select at;
+            return View(auto);
+        }
+        public ActionResult SPTheoQuartz()
+        {
+            var qua = from q in data.SANPHAMs where q.MaLoai == 4 select q;
+            return View(qua);
         }
         public ActionResult ThuongHieu()
         {
@@ -41,5 +51,6 @@ namespace DongHo.Controllers
             SANPHAM ct = data.SANPHAMs.SingleOrDefault(t => t.MaSP == id);
             return View(ct);
         }
+
     }
 }

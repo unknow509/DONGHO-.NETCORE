@@ -30,6 +30,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
     <script src="~/Scripts/jquery.easydropdown.js"></script>
     <script src="~/Scripts/simpleCart.min.js"></script>
+    <style>
+        
+
+    </style>
 </head>
 <body>
     <div class="banner">
@@ -86,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="menu">
                     <ul class="megamenu skyblue">
-                        <li class=""><a class="color3" href="">Men</a></li>
+                        <li class=""><a class="color3" href="@Url.Action("SPTheoNam","DONGHO")">Men</a></li>
                         <li class=""><a class="color3" href="">Women</a></li>
                         <li>
                             <a class="color3" href="#">Brands</a>
@@ -105,8 +109,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </div>
                         </li>
-                        <li class=""><a class="color3" href="">Automatic watches</a></li>
-                        <li><a class="color3" href="404.html">Quartz Watches</a></li>
+                        <li class=""><a class="color3" href="@Url.Action("SPTheoAutomatic","DONGHO")">Automatic watches</a></li>
+                        <li><a class="color3" href="@Url.Action("SPTheoQuartz","DONGHO")">Quartz Watches</a></li>
                         <div class="clearfix"> </div>
                     </ul>
                 </div>
@@ -116,13 +120,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     @RenderBody()
     <div class="main">
-
-        <div class="middle_content">
-            <div class="container">
-                <h2 class="layout-animation">Welcome</h2>
-                <p>When you came to our website, we will give you the best watch you want </p>
-            </div>
-        </div>
+       
         <div class="content_middle_bottom">
             <div class="header-left" id="home">
                 <section>

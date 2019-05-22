@@ -3,18 +3,18 @@
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_LayoutUser.cshtml";
 }
-
-<li style="list-style:none;" class="col-sm-12">
-    <a style="text-decoration:none;" href="@Url.Action("Details","DONGHO",new {id=Model.MaSP })" class="Model-link" title="">
-        <div class="bannerBox">
-            <img src="~/Images/@Model.Anhbia" class="Model-img" title="" alt="@Model.TenSP" width="70%" height="80%" />
-
-            <div style="text-align:justify">
-                <h5 style="text-align:center">@Model.TenSP</h5>
-                <h3 style="font:bold;text-align:center">@Model.Giaban VNĐ</h3>
-            </div>
-        </div>
-    </a>
-</li>
-}
-
+<ul class="content-home grid-container">
+    <div class="row"></div>
+        <li style="list-style:none; margin-left:250px;" class="col-sm-9" >
+            <a style="text-decoration:none;width:500px;" href="@Url.Action("Details","DONGHO",new {id=Model.MaSP })" title="">
+                <div class="bannerBox">
+                    <img src="~/Images/@Model.Anhbia" class="Model-img" title="" alt="@Model.TenSP" width="70%" height="80%" />
+                    <div style="text-align:justify">
+                        <h5 style="text-align:center">@Model.TenSP</h5>
+                        <h3 style="font:bold;text-align:center;color:#c48c46;">@Model.Giaban VNĐ</h3>
+                    </div>
+                </div>
+            </a>
+            <p> @Model.Mota </p>
+        </li>
+</ul>

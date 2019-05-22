@@ -389,6 +389,9 @@
     <Content Include="Views\DONGHO\ThuongHieu.cshtml" />
     <Content Include="Views\DONGHO\SPTheothuonghieu.cshtml" />
     <Content Include="Views\DONGHO\Details.cshtml" />
+    <Content Include="Views\DONGHO\SPTheoAutomatic.cshtml" />
+    <Content Include="Views\DONGHO\SPTheoQuartz.cshtml" />
+    <Content Include="Views\DONGHO\SPTheoNam.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
