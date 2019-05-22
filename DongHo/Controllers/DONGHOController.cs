@@ -23,8 +23,13 @@ namespace DongHo.Controllers
         }
         public ActionResult SPTheoNam()
         {
-            var nam = from n in data.SANPHAMs where n.Gioitinh == 1 select n;
-            return View();
+            var nam = from n in data.SANPHAMs where n.Gioitinh.Equals("Nam") select n ;
+            return View(nam);
+        }
+        public ActionResult SPTheoNu()
+        {
+            var nu = from u in data.SANPHAMs where u.Gioitinh.Equals("Nu") select u;
+            return View(nu);
         }
         public ActionResult SPTheoAutomatic()
         {

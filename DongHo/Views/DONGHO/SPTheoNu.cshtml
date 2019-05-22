@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "SPTheoNu";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+</style>
+<div class="middle_content">
+    <div class="container">
+        <h2 style="font-family:Lobster;border-bottom:1.5px solid #ec1717;letter-spacing: 2px;">Watches for Women</h2>
+    </div>
+</div>
+<div>
+    <ul class="content-home grid-container">
+        @foreach (var Model in Model)
+        {
+            <li style="list-style: none;" class="col-sm-9">
+                <a href="@Url.Action("Details","DONGHO",new {id=Model.MaSP })" class="Model-link" title="">
+                    <div class="bannerBox">
+                        <img src="~/Images/@Model.Anhbia" class="Model-img" title="" alt="@Model.TenSP" width="70%" height="80%" />
+                        <div style="text-align:justify">
+                            <h5 style="text-align:center">@Model.TenSP</h5>
+                            <h3 style="font:bold;text-align:center">@Model.Giaban VNĐ</h3>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        }
+    </ul>
+</div>
+

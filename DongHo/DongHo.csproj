@@ -392,6 +392,7 @@
     <Content Include="Views\DONGHO\SPTheoAutomatic.cshtml" />
     <Content Include="Views\DONGHO\SPTheoQuartz.cshtml" />
     <Content Include="Views\DONGHO\SPTheoNam.cshtml" />
+    <Content Include="Views\DONGHO\SPTheoNu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
