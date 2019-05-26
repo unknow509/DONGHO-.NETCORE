@@ -8,12 +8,23 @@ namespace DongHo.Controllers
 {
     public class DONGHOController : Controller
     {
-  
+        //private readonly DongHoDataContext data;
+
+
+        //public DONGHOController(DongHoDataContext context)
+        //{
+        //    data = context;
+
+        //}
+
+        // DongHoDataContext data = new DongHoDataContext();
         DongHoDataContext data = new DongHoDataContext();
+
         // GET: DONGHO
         private List<SANPHAM> Laydongho(int count)
         {
 
+            //return data.SanPhams.OrderByDescending(a => a.NgayCapNhat).Take(count).ToList();
             return data.SANPHAMs.OrderByDescending(a => a.Ngaycapnhat).Take(count).ToList();
         }
         public ActionResult Index()
@@ -21,41 +32,41 @@ namespace DongHo.Controllers
             var donghomoi = Laydongho(3);
             return View(donghomoi);
         }
-        public ActionResult SPTheoNam()
-        {
-            var nam = from n in data.SANPHAMs where n.Gioitinh.Equals("Nam") select n ;
-            return View(nam);
-        }
-        public ActionResult SPTheoNu()
-        {
-            var nu = from u in data.SANPHAMs where u.Gioitinh.Equals("Nu") select u;
-            return View(nu);
-        }
-        public ActionResult SPTheoAutomatic()
-        {
-            var auto = from at in data.SANPHAMs where at.MaLoai == 3 select at;
-            return View(auto);
-        }
-        public ActionResult SPTheoQuartz()
-        {
-            var qua = from q in data.SANPHAMs where q.MaLoai == 4 select q;
-            return View(qua);
-        }
-        public ActionResult ThuongHieu()
-        {
-            var thuonghieu = from th in data.THUONGHIEUs select th;
-            return PartialView(thuonghieu);
-        }
-        public ActionResult SPTheothuonghieu(int id)
-        {
-            var dongho = from dh in data.SANPHAMs where dh.MaTH == id select dh;
-            return View(dongho);
-        }
-        public ActionResult Details(int id)
-        {
-            SANPHAM ct = data.SANPHAMs.SingleOrDefault(t => t.MaSP == id);
-            return View(ct);
-        }
+    //    public ActionResult SPTheoNam()
+    //    {
+    //        var nam = from n in data.SanPhams where n.GioiTinh.Equals("Nam") select n ;
+    //        return View(nam);
+    //    }
+    //    public ActionResult SPTheoNu()
+    //    {
+    //        var nu = from u in data.SanPhams where u.GioiTinh.Equals("Nu") select u;
+    //        return View(nu);
+    //    }
+    //    public ActionResult SPTheoAutomatic()
+    //    {
+    //        var auto = from at in data.SanPhams where at.MaLoai == 3 select at;
+    //        return View(auto);
+    //    }
+    //    public ActionResult SPTheoQuartz()
+    //    {
+    //        var qua = from q in data.SanPhams where q.MaLoai == 4 select q;
+    //        return View(qua);
+    //    }
+    //    public ActionResult ThuongHieu()
+    //    {
+    //        var thuonghieu = from th in data.ThuongHieus select th;
+    //        return PartialView(thuonghieu);
+    //    }
+    //    public ActionResult SPTheothuonghieu(int id)
+    //    {
+    //        var dongho = from dh in data.SanPhams where dh.MaThuongHieu == id select dh;
+    //        return View(dongho);
+    //    }
+    //    public ActionResult Details(int id)
+    //    {
+    //        SANPHAM ct = data.SanPhams.SingleOrDefault(t => t.MaSanPham == id);
+    //        return View(ct);
+    //    }
 
     }
 }
