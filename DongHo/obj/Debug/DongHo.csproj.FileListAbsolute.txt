@@ -79,6 +79,4 @@ D:\Lab-VS\DongHo\DongHo\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Lab-VS\DongHo\DongHo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Lab-VS\DongHo\DongHo\obj\Debug\DongHo.dll
 D:\Lab-VS\DongHo\DongHo\obj\Debug\DongHo.pdb
-D:\Lab-VS\DongHo\DongHo\obj\Debug\DongHo.csprojAssemblyReference.cache
-D:\Lab-VS\DongHo\DongHo\obj\Debug\DongHo.csproj.CoreCompileInputs.cache
-D:\Lab-VS\DongHo\DongHo\obj\Debug\DongHo.csproj.CopyComplete
+D:\Lab-VS\DongHo\DongHo\obj\Debug\DongHo.csprojResolveAssemblyReference.cache

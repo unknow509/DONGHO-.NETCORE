@@ -22,11 +22,11 @@
         @foreach (var Model in Model)
         {
             <li style="list-style: none;" class="col-sm-9">
-                <a  style="text-decoration:none;" href="@Url.Action("Details","DONGHO",new {id=Model.MaSP })" class="Model-link" title="">
+                <a  style="text-decoration:none;" href="@Url.Action("Details","DONGHO",new {id=Model.MaSanPham })" class="Model-link" title="">
                     <div class="bannerBox">
-                        <img src="~/Images/@Model.Anhbia" class="Model-img" title="" alt="@Model.TenSP" width="70%" height="80%" />
+                        <img src="~/Images/@Model.AnhBia" class="Model-img" title="" alt="@Model.TenSanPham" width="70%" height="80%" />
                         <div style="text-align:justify">
-                            <h5 style="text-align:center">@Model.TenSP</h5>
+                            <h5 style="text-align:center">@Model.TenSanPham</h5>
                             <h3 style="font:bold;text-align:center;color:#c48c46;">@Model.Giaban VNĐ</h3>
                         </div>
                     </div>
